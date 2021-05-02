@@ -5,18 +5,26 @@
 
 #include <iostream>
 
-float Centigrados=0;    // Declaracion de la variable "Centigrados" del tipo flotante
-float Fahrenheit=0;     // Declaracion de la variable "Fahrenheit" del tipo flotante
-
 int main() {
 
-std::cout << "Ingrese el valor de los °Centigrados a Convertir: " << std::endl;   // Lee dato del teclado y  
-std::cin >> Centigrados;                                                          // lo almacena en "Centigrados"
+// Declaracion de la variable "Centigrados" del tipo flotante
+float Centigrados=0;    
 
-Fahrenheit=((9*Centigrados)/5)+32; // Fórmula de la conversión de °Centigrados a °Fahrenheit
+// Declaracion de la variable "Fahrenheit" del tipo flotante
+float Fahrenheit=0;     
 
-std::cout << "Los °Fahrenheit son: " << Fahrenheit << std::endl; // Muestra el resultado de la conversión °C a °F
+// Lee dato del teclado
+std::cout << "Ingrese el valor de los °Centigrados a Convertir: " << std::endl;      
 
-return (0);
+// Almacena el dato en "Centigrados"
+std::cin >> Centigrados;                                                          
+
+// Fórmula de la conversión de °Centigrados a °Fahrenheit
+Fahrenheit=((9*Centigrados)/5)+32; 
+
+// Muestra el resultado de la conversión °C a °F
+std::cout << "Los °Fahrenheit son: " << Fahrenheit << std::endl; 
+
+return 0;
 
 }
